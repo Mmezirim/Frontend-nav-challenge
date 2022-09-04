@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-Challenge</title>
+    <link rel="icon"  href="./favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./logo.svg" alt="logo"></div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-bar">
+                <img src="./icon-menu.svg" alt="menu-bar">
+            </label>    
+            <ul class="log">
+                <div class="left">
+                    <li><a href="#">Features <i><img src="./icon-arrow-down.svg" alt="arrow-down">&nbsp;</i></a>
+                        <div class="drop-downs">
+                           <ul class="drop down ul">
+                               <li><a href="#">
+                                   <i><img src="./icon-todo.svg" alt="to-do-icon"></i>
+                                   To-do
+                                   </a>
+                               </li>
+                               <li><a href="#">
+                                   <i><img src="./icon-calendar.svg" alt="calender-icon"></i>
+                                   Calender
+                                   </a>
+                               </li>
+                               <li><a href="#">
+                                   <i><img src="./icon-planning.svg" alt="planning-icon"></i>
+                                   Planning
+                                   </a>
+                               </li>
+                               <li><a href="#">
+                                   <i><img src="./icon-reminders.svg" alt="reminders-icon"></i>
+                                   Reminders
+                                   </a>
+                               </li>
+                           </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Company <i><img src="./icon-arrow-down.svg" alt="arrow-down"></i></a>
+                       <div class="drop-downs">
+                           <ul>
+                               <li><a href="#">History</a></li>
+                               <li><a href="#">Our team</a></li>
+                               <li><a href="#">Blog</a></li>
+                           </ul>
+                       </div>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                </div>   
+                <div class="right">
+                    <li><a href="#">Login</a></li>
+                    <li><button class="register">Register</button></li>
+                </div> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contents">
+            <div class="text">
+                <h1>Make <br> remote work</h1> 
+                <p>
+                   Get your team in sync no matter your location. Streamline processes, create team rituals and watch productivity soar
+                </p>
+                <button class="button">Learn more</button>
+                <div class="other-logos">
+                   <img src="./client-databiz.svg" alt="databiz">
+                   <img src="./client-audiophile.svg" alt="audiophile">
+                   <img src="./client-meet.svg" alt="meet">
+                   <img src="./client-maker.svg" alt="maker">
+               </div>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width:860px)" srcset="./image-hero-mobile.png">
+                    <img src="./image-hero-desktop.png" alt="hero-image">
+                </picture>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: hsl(0, 0%, 46%);
+}
+body {
+    font-family: "Epilogue", sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    font-style: sans-serif;
+} 
+header{
+    margin-top: 1.5rem;
+}
+.logo{
+    position: absolute;
+    padding-left: 1em;
+}
+#check, 
+.menu-bar{
+    display: none;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8em;
+    font-size: small;
+    
+}
+ul .left{
+    display: flex;
+}
+ul .left li{
+    padding: 0 1rem;
+}
+ul .right{
+    display: flex;
+}
+ul .right li{
+    padding: 0 1rem;
+}
+.drop-downs{
+    display: none;
+}
+.left li:hover .drop-downs{
+    display: block;
+    position: absolute;
+    background-color: white !important;
+    padding: 0.5rem 0.5rem !important;
+    line-height: 2rem;
+    border-radius: 0.5rem;
+}
+.drop-downs ul{
+    display: block;
+    margin-left: -1em ;
+    margin-right: -1em;
+}
+.register{
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    color: hsl(0, 0%, 46%);
+    margin-top: -0.5rem;
+    border:  2px solid black;
+
+}
+.contents{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 8%;
+}
+.text{
+    width: 20%;
+    font-size: larger;
+}
+.text h1{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: black;
+}
+p{
+    color: hsl(0, 0%, 46%);
+    font-size: large;
+}
+.button{
+    border-radius: 0.5rem;
+    padding: 0.7rem 2.5rem; 
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+h1, p, 
+.button, 
+.other-logos{
+    margin: 2rem 0;
+}
+picture img{
+    width: 40vmin;
+    min-width: 30vmin;
+   
+}
+
+@media (max-width:860px) {
+    .menu-bar{
+        display: block;
+        float: right;
+        padding-right: 1em;
+    }
+    nav .log{
+        display: block;
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(236, 236, 236);
+        right: -100%;
+        top: 3rem;
+        padding: -4rem !important;
+        transition:  .5s;
+        text-align: center;
+    }
+    ul .left, ul .right{
+        display: block;
+        padding: 0;
+    }
+    ul .left li, ul .right li{
+        padding: 2rem;
+    }
+    #check:checked ~ .log{
+        right: 0;
+    }
+    .left li:hover .drop-downs{
+        position: relative;
+        margin-left: 8em ;
+        margin-right: 8em;
+        min-width: 8em;
+
+    }
+    .left li{
+        border: 0;
+    }
+    .drop-downs ul li{
+        margin: -3em;
+    }
+    .contents{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100vmin;
+        margin-top: 4rem;
+    }
+    picture img{
+        width: 100%;
+    }
+    .text{
+        width: 80%;
+    } 
+    .button{
+        width: 100%;
+        align-items: center;
+    }  
+    .other-logos{
+        position: absolute;
+    } 
+}
